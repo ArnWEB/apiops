@@ -46,16 +46,10 @@ stages:
                scriptSource: 'inline'
                script: 'print("hello")'
   - stage: create_artifact_from_portal
-    pool: 
-      name: Default
-      demands:
-        - agent.name -equals ARNAB
     displayName: Create artifact from portal
     jobs:
       - job: create_artifact_from_portal
         displayName: Create artifact from portal
-        pool:
-          vmImage: ubuntu-latest
         steps:
           - task: AzureCLI@2
             displayName: Set extraction variables
