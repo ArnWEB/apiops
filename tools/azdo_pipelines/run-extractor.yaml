@@ -29,10 +29,8 @@ parameters:
       - OpenAPIV3Json
       - OpenAPIV2Yaml
       - OpenAPIV2Json
-
-trigger: none
-
 pool: default
+trigger: none
 
 variables:
   - group: apim-automation
