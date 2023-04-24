@@ -35,6 +35,17 @@ variables:
   - group: apim-automation
   - name: System.Debug
     value: true
+stages:
+  - stage: test
+    jobs:
+       - job: create_artifact_from_portal
+         displayName: Create artifact from portal
+         steps:
+           - task: PythonScript@0
+             inputs:
+               scriptSource: 'inline'
+               script: 'print("hello")'
+    
 
 # stages:
 #   - stage: create_artifact_from_portal
