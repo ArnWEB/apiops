@@ -34,8 +34,9 @@ trigger: none
 
 variables:
   - group: apim-automation
-  - name: System.Debug
-    value: true
+  - name: System.Debu
+pool:
+  name: Default
 
 stages:
   - stage: create_artifact_from_portal
