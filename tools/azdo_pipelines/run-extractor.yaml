@@ -29,7 +29,6 @@ parameters:
       - OpenAPIV3Json
       - OpenAPIV2Yaml
       - OpenAPIV2Json
-pool: Default
 trigger: none
 
 variables:
@@ -39,6 +38,7 @@ variables:
 
 stages:
   - stage: create_artifact_from_portal
+    pool: Default
     displayName: Create artifact from portal
     jobs:
       - job: create_artifact_from_portal
