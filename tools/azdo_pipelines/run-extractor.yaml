@@ -38,7 +38,8 @@ variables:
 
 stages:
   - stage: create_artifact_from_portal
-    pool: Default
+    pool: 
+      name: Default
     displayName: Create artifact from portal
     jobs:
       - job: create_artifact_from_portal
