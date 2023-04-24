@@ -32,12 +32,12 @@ parameters:
 
 trigger: none
 
+pool: default
+
 variables:
   - group: apim-automation
   - name: System.Debug
     value: true
-
-pool: default
 
 stages:
   - stage: create_artifact_from_portal
