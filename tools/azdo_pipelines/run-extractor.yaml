@@ -37,6 +37,8 @@ variables:
   - name: System.Debug
     value: true
 
+pool: MyPool
+
 stages:
   - stage: create_artifact_from_portal
     displayName: Create artifact from portal
