@@ -29,7 +29,7 @@ parameters:
       - OpenAPIV3Json
       - OpenAPIV2Yaml
       - OpenAPIV2Json
-pool: default
+pool: Default
 trigger: none
 
 variables:
